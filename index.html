@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="苦労話" class="slide level1">
+<h1>苦労話</h1>
+<p>江添亮</p>
+</section>
+<section id="最初の本" class="slide level1">
+<h1>最初の本</h1>
+<ul>
+<li>C++11/14コア言語</li>
+<li>2009年から書いていた古い本</li>
+<li>1MB超のXHTMLファイル</li>
+</ul>
+</section>
+<section id="次の本" class="slide level1">
+<h1>次の本</h1>
+<ul>
+<li>Stroustrup本の査読</li>
+<li>技術的間違いが多い</li>
+<li>サンプルコードの多くがコンパイルできない</li>
+<li>冗長</li>
+</ul>
+</section>
+<section id="教訓" class="slide level1">
+<h1>教訓</h1>
+<ul>
+<li>ファイルは分割</li>
+<li>技術的に正しく</li>
+<li>文章は簡潔に</li>
+<li>テストを書く</li>
+</ul>
+</section>
+<section id="ファイルは分割" class="slide level1">
+<h1>ファイルは分割</h1>
+<ul>
+<li>markdownで書く</li>
+<li>pandocで変換</li>
+</ul>
+</section>
+<section id="技術的に正しく" class="slide level1">
+<h1>技術的に正しく</h1>
+<ul>
+<li>GitHubで早期公開</li>
+<li>大量のPR</li>
+<li>2/3のコミットがPR</li>
+</ul>
+</section>
+<section id="テストを書く" class="slide level1">
+<h1>テストを書く</h1>
+<ul>
+<li>書いた</li>
+<li>サンプルコードをgrep</li>
+<li>GCCに食わせる</li>
+</ul>
+</section>
+<section id="現実" class="slide level1">
+<h1>現実</h1>
+<ul>
+<li>今回の本</li>
+<li>C++17の新機能を解説</li>
+<li>執筆期間9ヶ月</li>
+<li>プラスこれまでの下積み</li>
+</ul>
+</section>
+<section id="規格発行日" class="slide level1">
+<h1>規格発行日</h1>
+<ul>
+<li>ISO/IEC 14882:2017</li>
+<li>2017-12-01</li>
+</ul>
+</section>
+<section id="見切り発車" class="slide level1">
+<h1>見切り発車</h1>
+<ul>
+<li>2017年初頭から執筆開始</li>
+<li>まだドラフト規格</li>
+<li>変更されるかもしれない</li>
+<li>正式に発行されてから書き始めたのでは遅すぎる</li>
+</ul>
+</section>
+<section id="c17コンパイラーの欠如" class="slide level1">
+<h1>C++17コンパイラーの欠如</h1>
+<ul>
+<li>まともなC++17コンパイラーがない</li>
+<li>テストできない</li>
+</ul>
+</section>
+<section id="ファイルシステム" class="slide level1">
+<h1>ファイルシステム</h1>
+<ul>
+<li>説明がだるい</li>
+<li>しかしファイルシステムを完全に解説する参考書が他に出るか？</li>
+<li>読みたいものは自分で書くしかない</li>
+</ul>
+</section>
+<section id="数学関数" class="slide level1">
+<h1>数学関数</h1>
+<ul>
+<li>第一種、第二種、第三種</li>
+<li>完全、不完全</li>
+<li>正則、非正則</li>
+<li>ラゲール、ルジャンドル、エルミート</li>
+<li>リーマンゼータ関数</li>
+</ul>
+</section>
+<section id="数式" class="slide level1">
+<h1>数式</h1>
+<p>ラゲール陪多項式（Associated Laguerre polynomials）</p>
+<p><span class="math display">\[
+  \mathsf{L}_n^m(x) =
+  (-1)^m \frac{\mathsf{d} ^ m}
+       {\mathsf{d}x ^ m} \, \mathsf{L}_{n+m}(x),
+       \quad \mbox{for $x \ge 0$}
+\]</span></p>
+</section>
+<section id="cポケットリファレンスに先を越される" class="slide level1">
+<h1>C++ポケットリファレンスに先を越される</h1>
+<p>発売日が一ヶ月遅れた</p>
+</section>
+<section id="自由な本" class="slide level1">
+<h1>自由な本</h1>
+<ul>
+<li>GPLv3</li>
+<li>ソースコードにあたるTeXを公開</li>
+<li>トンボ消したい</li>
+<li>Makefileほしい</li>
+<li>Patch is welcome.</li>
+</ul>
+</section>
+<section id="次の本-1" class="slide level1">
+<h1>次の本</h1>
+<ul>
+<li>C++入門書</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Transition style
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
